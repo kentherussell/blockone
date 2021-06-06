@@ -1,11 +1,11 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom/extend-expect';
-import Transactions from './Transactions';
+import TransactionsPage from './TransactionsPage';
 
 describe('<Transactions />', () => {
   test('it should mount', () => {
-    render(<Transactions />);
+    render(<TransactionsPage />);
     
     const transactions = screen.getByTestId('Transactions');
 

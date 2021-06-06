@@ -1,1 +1,10 @@
-.Header {}
+.Header {
+}
+
+.ActionIcons {
+    margin-left: auto;
+}
+
+.IconLink {
+    color: #FFF
+}
