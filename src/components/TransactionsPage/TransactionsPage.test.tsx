@@ -25,7 +25,7 @@ describe('<TransactionsPage />', () => {
     })
 
     test('should properly render accounts and choose the first one by default', async () => {
-        const exampleReturn = [exampleAccount, exampleAccount]
+        const exampleReturn = [exampleAccount]
         accountsMock.mockReturnValue(Promise.resolve(exampleReturn))
         const {getByTestId, getByText} = render(<TransactionsPage/>);
         expect(accountsMock).toHaveBeenCalled()

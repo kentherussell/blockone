@@ -16,7 +16,7 @@ export function transferMoney(accountTo: number, accountFrom: number, amount: nu
     return new Promise<boolean>(resolve => {
         const baseTransaction = {
             timestamp: new Date().toISOString().substring(0, 10),
-            description: 'Account TransferPage',
+            description: 'Account Transfer',
             currency: Currency.USD,
             amount: amount
         }
@@ -33,7 +33,7 @@ export function transferMoney(accountTo: number, accountFrom: number, amount: nu
                 account: accountTo,
                 action: TransactionType.CREDIT
             })
-        setTimeout(() => resolve(true), 5000)  // replicate longer server response time
+        setTimeout(() => resolve(true), 4000)  // replicate longer server response time
     })
 }
 

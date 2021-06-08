@@ -21,7 +21,7 @@ describe('<TransferPage />', () => {
         transferMoney.mockReturnValue(Promise.resolve(true))
     })
 
-    test('it should mount', () => {
+    test('it should mount', async () => {
         const {getByTestId} = render(<TransferPage/>)
         expect(getByTestId('TransferPage')).toBeInTheDocument()
     })
@@ -116,9 +116,6 @@ describe('<TransferPage />', () => {
         fireEvent.change(getByTestId('amount-input').getElementsByTagName('input')[0], {target: {value: 600.54}})
         fireEvent.click(getByTestId('start-transfer-button'))
         container.querySelectorAll('select,input').forEach(elem => expect(elem).toBeDisabled())
-        // await Promise.resolve()
-
-
     })
 
     test('should enable all form controls after success', async () => {
@@ -129,8 +126,6 @@ describe('<TransferPage />', () => {
         fireEvent.click(getByTestId('start-transfer-button'))
         await Promise.resolve()
         container.querySelectorAll('select,input').forEach(elem => expect(elem).toBeEnabled())
-
-
     })
 
 

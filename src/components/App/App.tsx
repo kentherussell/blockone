@@ -9,7 +9,7 @@ import TransferPage from "../TransferPage/TransferPage";
 function App() {
     return (
         <Router history={browserHistory}>
-            <Header/>
+            <Header />
             <Switch>
                 <Route exact path={'/transactions'} component={TransactionsPage}/>
                 <Route exact path={'/'} component={TransactionsPage}/>

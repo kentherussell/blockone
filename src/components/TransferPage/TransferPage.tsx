@@ -132,8 +132,7 @@ const TransferPage: React.FC = () => {
                     </Box>
                     {errorMessages.map(message => <Alert role="error-message" key={message}
                                                          severity="error">{message}</Alert>)}
-                    {transferComplete &&
-                    <Alert role="success-message" severity="success">Successfully transferred money.</Alert>}
+                    {transferComplete && <Alert role="success-message" severity="success">Successfully transferred money.</Alert>}
                 </form>
             </Box>
         </Container>

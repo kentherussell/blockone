@@ -1,8 +1,14 @@
-# Getting Started with Create React App
+## Technical Debt
+Some technical debt includes:
+- inline styling
+- mocked APIs
+- not using a validation library
+- verbose tests due to input fields being encapsulated in Material UI components
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Getting Started
 
-## Available Scripts
+Before starting the application, make sure to run:
+### `npm install`
 
 In the project directory, you can run:
 
