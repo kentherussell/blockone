@@ -6,8 +6,7 @@ const accounts: Account[] = [
     {id: 85948529984, name: "Money Market"},
     {id: 39489123473, name: "401K"}
 ]
+
 export function getAccounts() {
-    // this is where we'd do a fetch(), use axios, or other method
-    // right now, this is mocked.
-    return accounts;
+    return Promise.resolve(accounts)
 }

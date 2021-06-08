@@ -1,19 +1,17 @@
-import {Account} from "./Account"
-
 export enum TransactionType {
-    DEBIT, CREDIT
+    DEBIT = "DEBIT", CREDIT = "CREDIT"
 }
 
 // Technical Debt
 export enum Currency {
-    USD, CAD, GBP
+    USD = "USD", CAD = "CAD", GBP = "GBP"
 }
 
 export interface Transaction {
     id: number
-    timestamp: Date
+    timestamp: string
     action: TransactionType
-    description: string
+    description?: string
     amount: number
     currency: Currency
     account: number

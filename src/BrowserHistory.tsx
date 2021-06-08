@@ -1,4 +1,4 @@
-import {History, createBrowserHistory} from 'history';
+import {createBrowserHistory, History} from 'history';
 
 export type ReadonlyBrowserHistory = Readonly<History>
 
